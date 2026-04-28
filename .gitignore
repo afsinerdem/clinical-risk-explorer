@@ -1,0 +1,14 @@
+__pycache__/
+.env
+.env.*
+.venv/
+.pytest_cache/
+.streamlit/secrets.toml
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.coverage
+htmlcov/
+dist/
+build/

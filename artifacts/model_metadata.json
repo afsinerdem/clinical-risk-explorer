@@ -1,0 +1,307 @@
+{
+  "data_version": "2c0e57dc0361",
+  "train_timestamp": "2026-04-15T10:47:32.810838+00:00",
+  "feature_columns": [
+    "male",
+    "age",
+    "education",
+    "currentSmoker",
+    "cigsPerDay",
+    "BPMeds",
+    "prevalentStroke",
+    "prevalentHyp",
+    "diabetes",
+    "totChol",
+    "sysBP",
+    "diaBP",
+    "BMI",
+    "heartRate",
+    "glucose"
+  ],
+  "selected_model": "logistic_regression",
+  "selected_model_display_name": "Logistic Regression",
+  "threshold": 0.1051,
+  "risk_bands": {
+    "low": {
+      "min": 0.0,
+      "max": 0.1,
+      "label_key": "risk_low"
+    },
+    "moderate": {
+      "min": 0.1,
+      "max": 0.2,
+      "label_key": "risk_moderate"
+    },
+    "high": {
+      "min": 0.2,
+      "max": 1.01,
+      "label_key": "risk_high"
+    }
+  },
+  "cv_summary": [
+    {
+      "model_key": "logistic_regression",
+      "model_name": "Logistic Regression",
+      "threshold": 0.1051,
+      "params": {
+        "C": 0.5,
+        "class_weight": null
+      },
+      "accuracy_mean": 0.5362701526190258,
+      "accuracy_std": 0.02278220424288232,
+      "balanced_accuracy_mean": 0.6612696900942732,
+      "balanced_accuracy_std": 0.019959360698121487,
+      "precision_mean": 0.22540260804469373,
+      "precision_std": 0.011191727801145858,
+      "ppv_mean": 0.22540260804469373,
+      "ppv_std": 0.011191727801145858,
+      "npv_mean": 0.9438395050661201,
+      "npv_std": 0.008305486422973756,
+      "recall_mean": 0.8407766990291261,
+      "recall_std": 0.01800702620484602,
+      "sensitivity_mean": 0.8407766990291261,
+      "sensitivity_std": 0.01800702620484602,
+      "specificity_mean": 0.48176268115942034,
+      "specificity_std": 0.0242434492023286,
+      "f2_mean": 0.5436918062612162,
+      "f2_std": 0.01872710633874418,
+      "pr_auc_mean": 0.36583835527146,
+      "pr_auc_std": 0.03818602020375941,
+      "roc_auc_mean": 0.7349464026077576,
+      "roc_auc_std": 0.029349671962576974,
+      "brier_score_mean": 0.11541084001036454,
+      "brier_score_std": 0.003813996119188017
+    },
+    {
+      "model_key": "random_forest",
+      "model_name": "Random Forest",
+      "threshold": 0.1219,
+      "params": {
+        "n_estimators": 200,
+        "max_depth": 6,
+        "min_samples_leaf": 5,
+        "class_weight": null
+      },
+      "accuracy_mean": 0.5745960787380366,
+      "accuracy_std": 0.02449810096822628,
+      "balanced_accuracy_mean": 0.6615417458139862,
+      "balanced_accuracy_std": 0.03050209217152002,
+      "precision_mean": 0.2333355090497664,
+      "precision_std": 0.01648901988419466,
+      "ppv_mean": 0.2333355090497664,
+      "ppv_std": 0.01648901988419466,
+      "npv_mean": 0.9334535196179097,
+      "npv_std": 0.015342572573741196,
+      "recall_mean": 0.7864077669902912,
+      "recall_std": 0.050260889730270986,
+      "sensitivity_mean": 0.7864077669902912,
+      "sensitivity_std": 0.050260889730270986,
+      "specificity_mean": 0.5366757246376811,
+      "specificity_std": 0.02560545068463427,
+      "f2_mean": 0.5332772065945944,
+      "f2_std": 0.03433242737159662,
+      "pr_auc_mean": 0.32265257132659036,
+      "pr_auc_std": 0.039579152334573285,
+      "roc_auc_mean": 0.7209764697950377,
+      "roc_auc_std": 0.03405599971905394,
+      "brier_score_mean": 0.11760997873550794,
+      "brier_score_std": 0.004238008227343229
+    },
+    {
+      "model_key": "hist_gradient_boosting",
+      "model_name": "HistGradientBoosting",
+      "threshold": 0.1,
+      "params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "max_leaf_nodes": 15
+      },
+      "accuracy_mean": 0.5188999092018889,
+      "accuracy_std": 0.06308415538987323,
+      "balanced_accuracy_mean": 0.6462515125932179,
+      "balanced_accuracy_std": 0.025137542991422204,
+      "precision_mean": 0.21846096018647013,
+      "precision_std": 0.016133258515854898,
+      "ppv_mean": 0.21846096018647013,
+      "ppv_std": 0.016133258515854898,
+      "npv_mean": 0.939682350088803,
+      "npv_std": 0.013800766520748547,
+      "recall_mean": 0.829126213592233,
+      "recall_std": 0.058767945438530325,
+      "sensitivity_mean": 0.829126213592233,
+      "sensitivity_std": 0.058767945438530325,
+      "specificity_mean": 0.4633768115942029,
+      "specificity_std": 0.08244107838094253,
+      "f2_mean": 0.529823509010136,
+      "f2_std": 0.02125882918387716,
+      "pr_auc_mean": 0.3181209824560124,
+      "pr_auc_std": 0.04000005400879823,
+      "roc_auc_mean": 0.7152615320575958,
+      "roc_auc_std": 0.0336686918263465,
+      "brier_score_mean": 0.11826769543279117,
+      "brier_score_std": 0.002925332994433334
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.5495283018867925,
+    "balanced_accuracy": 0.6516587422238035,
+    "precision": 0.22440087145969498,
+    "ppv": 0.22440087145969498,
+    "npv": 0.9331619537275064,
+    "recall": 0.7984496124031008,
+    "sensitivity": 0.7984496124031008,
+    "specificity": 0.5048678720445062,
+    "f2": 0.5282051282051282,
+    "pr_auc": 0.2943233115300971,
+    "roc_auc": 0.6964668844540759,
+    "brier_score": 0.12167669553240461,
+    "calibration_curve": {
+      "predicted_probability": [
+        0.03193086641466118,
+        0.049409130599203634,
+        0.0670972333581719,
+        0.08311645364666034,
+        0.10285226397486245,
+        0.1263201527201612,
+        0.1559701552791002,
+        0.1971078152644438,
+        0.2617823818312903,
+        0.4083683059544559
+      ],
+      "observed_rate": [
+        0.03529411764705882,
+        0.058823529411764705,
+        0.058823529411764705,
+        0.08333333333333333,
+        0.17647058823529413,
+        0.16470588235294117,
+        0.11904761904761904,
+        0.25882352941176473,
+        0.21176470588235294,
+        0.35294117647058826
+      ]
+    }
+  },
+  "calibration_method": "sigmoid",
+  "validation_report": {
+    "rows_before": 4240,
+    "rows_after": 4240,
+    "dropped_rows": 0,
+    "issue_counts": {}
+  },
+  "training_rows": 3392,
+  "test_rows": 848,
+  "positive_rate_train": 0.15182783018867924,
+  "positive_rate_test": 0.15212264150943397,
+  "explainability": {
+    "mode": "logistic_coefficients",
+    "intercept": -1.9898087070992343,
+    "rows": [
+      {
+        "feature": "BMI_missing",
+        "coefficient": 1.3545624908006888,
+        "abs_coefficient": 1.3545624908006888
+      },
+      {
+        "feature": "age",
+        "coefficient": 0.5680355070396915,
+        "abs_coefficient": 0.5680355070396915
+      },
+      {
+        "feature": "totChol_missing",
+        "coefficient": 0.5175773879276361,
+        "abs_coefficient": 0.5175773879276361
+      },
+      {
+        "feature": "sysBP",
+        "coefficient": 0.30334365132527424,
+        "abs_coefficient": 0.30334365132527424
+      },
+      {
+        "feature": "cigsPerDay",
+        "coefficient": 0.26609497004447963,
+        "abs_coefficient": 0.26609497004447963
+      },
+      {
+        "feature": "glucose_missing",
+        "coefficient": -0.24598271135070857,
+        "abs_coefficient": 0.24598271135070857
+      },
+      {
+        "feature": "male",
+        "coefficient": 0.22375352440230398,
+        "abs_coefficient": 0.22375352440230398
+      },
+      {
+        "feature": "BPMeds_missing",
+        "coefficient": 0.21048512831021549,
+        "abs_coefficient": 0.21048512831021549
+      },
+      {
+        "feature": "glucose",
+        "coefficient": 0.1669011456610204,
+        "abs_coefficient": 0.1669011456610204
+      },
+      {
+        "feature": "totChol",
+        "coefficient": 0.10931359853684264,
+        "abs_coefficient": 0.10931359853684264
+      },
+      {
+        "feature": "education_missing",
+        "coefficient": -0.09913469127051817,
+        "abs_coefficient": 0.09913469127051817
+      },
+      {
+        "feature": "prevalentStroke",
+        "coefficient": 0.08502053010866312,
+        "abs_coefficient": 0.08502053010866312
+      },
+      {
+        "feature": "prevalentHyp",
+        "coefficient": 0.0722924023618139,
+        "abs_coefficient": 0.0722924023618139
+      },
+      {
+        "feature": "cigsPerDay_missing",
+        "coefficient": -0.07110841460316707,
+        "abs_coefficient": 0.07110841460316707
+      },
+      {
+        "feature": "BPMeds",
+        "coefficient": 0.06572771025589591,
+        "abs_coefficient": 0.06572771025589591
+      },
+      {
+        "feature": "heartRate",
+        "coefficient": -0.033144185016752405,
+        "abs_coefficient": 0.033144185016752405
+      },
+      {
+        "feature": "diaBP",
+        "coefficient": 0.019317137132071935,
+        "abs_coefficient": 0.019317137132071935
+      },
+      {
+        "feature": "diabetes",
+        "coefficient": 0.016916938801522365,
+        "abs_coefficient": 0.016916938801522365
+      },
+      {
+        "feature": "education",
+        "coefficient": 0.00943878779993436,
+        "abs_coefficient": 0.00943878779993436
+      },
+      {
+        "feature": "BMI",
+        "coefficient": 0.009437508423387404,
+        "abs_coefficient": 0.009437508423387404
+      },
+      {
+        "feature": "currentSmoker",
+        "coefficient": -0.0007950928746566128,
+        "abs_coefficient": 0.0007950928746566128
+      }
+    ]
+  }
+}
